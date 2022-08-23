@@ -3,7 +3,7 @@
 
 <p>
 <ul>
-  <li> <b>Fluent Builder Design Pattern</b> is the variation of <b>Builder Design Pattern</b> where we can apply the <b><i>method chaining </i></b> over the methods of our builder class.Method chaining we can implement by returning the "object" itself using this object.
+  <li> <b>Fluent Builder Design Pattern</b> is the variation of <b>Builder Design Pattern</b> where we can apply the <b><i>method chaining </i></b> over the methods of our builder class. Method chaining we can implement by returning the "object" itself using <b>this</b> object.
     
       For Example :
         Student student = new();
@@ -14,14 +14,14 @@
     <ul>
       <li>In Builder Design pattern , builder interface contains all the methods of data type <b>void </b>, here we need to change it to <b>IBuilder</b> data type, becoz we are going to return the object by returning <b>this</b> pointer from all our methods so that we can do the chaining of methods .
       </li>
-      <li>From the <b>Concrete Builder Classes</b> we have yo return <b>this</b> object</li>
+      <li>From the <b>Concrete Builder Classes</b> we have to return <b>this</b> object</li>
       <li>Last step , in <b>Director class</b> lets do the chaining of methods .</li>
     </ul>
   </li>
   <li>Advantages :
     <ul>
       <li>Code will be more readable and usable.</li>
-      <li>This pattern widely used in LINQ queries ,Fluent Validationand moq testing.</li>
+      <li>This pattern widely used in LINQ queries ,Fluent Validation and moq testing.</li>
         <li> That's how we create the Fluent Api's  .
     </ul>
   </li>
