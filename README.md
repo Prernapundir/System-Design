@@ -29,4 +29,19 @@ Here we have separated out our database and server, so it's a little better as w
 - <b>Horizontal Scaling</b>
 
     This is the safest option for most of the system designs today. In horizontal scaling, we can add more and more servers, and with the help of load balancers, we can distribute the load. If any server goes down, load balancers will automatically reroute the traffic to other servers. So we solved the problem of a single point of failure. And it will be good if servers are stateless here.
+    
+    
+#### Where do servers come from ?
 
+1. Provisioned within your own company's data centres
+2. Cloud services (i.e, Amazpn EC2, Azure Vm's)
+3. Fully managed serverless services (like Azure functions , Lambda functions )
+
+#### Scaling the database
+- Failover servers : Cold Standby
+
+<img src="https://user-images.githubusercontent.com/33116849/233587946-6c539066-fd93-42fd-bad5-d7462c6f9802.png" width="50%"/>
+
+
+
+  
