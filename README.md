@@ -42,6 +42,13 @@ Here we have separated out our database and server, so it's a little better as w
 
 <img src="https://user-images.githubusercontent.com/33116849/233587946-6c539066-fd93-42fd-bad5-d7462c6f9802.png" width="50%"/>
 
+   In this approach, we have two databases: one is the primary database, and one is the backup database (called cold standby), which should be called upon in the event of the primary database's failure. Backup should be done here periodically.I have a few downsides too, like a decent amount of downtime and data loss.Upside is its cheap but still not a good choice for highly available systems.
+
+- Warm Standby
+
+   Instead of a periodic database, we have constant replication of the data from the primary database to the warm standby database. So it's always ready to replace the primary database without much downtime. It can have little data loss as well, but still, it's a far superior approach.
+
+
 
 
   
